@@ -1,0 +1,13 @@
+n = int(input())
+l = list(map(int, input().rstrip().split()))
+def insertionSort(l):
+    swap = 0
+    for i in range(len(l)):
+        key = i
+        while key > 0 and l[key] < l[key-1]:
+            l[key-1], l[key] = l[key], l[key-1]
+            swap += 1
+            key -= 1
+    return (swap)
+
+insertionSort(l)
