@@ -1,0 +1,12 @@
+n = int(input())
+def Fibonacci(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    else:
+        x = Fibonacci(n-1)
+        y = Fibonacci(n-2)
+    return x + y
+    
+Fibonacci(n)
